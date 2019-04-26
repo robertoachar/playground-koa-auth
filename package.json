@@ -23,7 +23,8 @@
     "url": "https://github.com/robertoachar/playground-koa-auth/issues"
   },
   "dependencies": {
-    "esm": "3.2.22"
+    "esm": "3.2.22",
+    "winston": "3.2.1"
   },
   "devDependencies": {
     "eslint": "5.16.0",
