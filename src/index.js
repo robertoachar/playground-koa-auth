@@ -4,7 +4,10 @@ import app from './app';
 import config from './config';
 import logger from './logger';
 
-mongoose.connect(config.DATABASE, { useNewUrlParser: true });
+mongoose.connect(config.DATABASE, {
+  useNewUrlParser: true,
+  useCreateIndex: true
+});
 
 mongoose.Promise = global.Promise;
 

@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const environment = ['NODE_ENV', 'DATABASE', 'PORT'];
+const environment = ['NODE_ENV', 'DATABASE', 'PORT', 'JWT_SECRET'];
 
 environment.forEach((name) => {
   if (!process.env[name]) {
@@ -15,7 +15,8 @@ environment.forEach((name) => {
 const config = {
   NODE_ENV: process.env.NODE_ENV,
   DATABASE: process.env.DATABASE,
-  PORT: process.env.PORT
+  PORT: process.env.PORT,
+  JWT_SECRET: process.env.JWT_SECRET
 };
 
 export default config;

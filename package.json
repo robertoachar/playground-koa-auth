@@ -23,8 +23,10 @@
     "url": "https://github.com/robertoachar/playground-koa-auth/issues"
   },
   "dependencies": {
+    "bcrypt": "3.0.6",
     "dotenv": "7.0.0",
     "esm": "3.2.22",
+    "jsonwebtoken": "8.5.1",
     "koa": "2.7.0",
     "koa-bodyparser": "4.2.1",
     "koa-helmet": "4.1.0",
