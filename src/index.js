@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+import app from './app';
 import config from './config';
 import logger from './logger';
 
@@ -19,4 +20,8 @@ mongoose.connection.on('disconnected', () => {
 mongoose.connection.on('error', (err) => {
   logger.error('MongoDB Error!', err.message);
   process.exit(1);
+});
+
+app.listen(config.PORT, () => {
+  Object.keys(config).map((key) => logger.info(`${key}: ${config[key]}`));
 });
